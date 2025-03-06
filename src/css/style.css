@@ -1,11 +1,444 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Jacques+Francois+Shadow&family=Lusitana:wght@400;700&display=swap');
+
+body {
+	background-color: #FFFDF5;
+  }
+
+@media  (min-width: 1024px) {
+	.h1 {
+		font-family: "Jacques Francois Shadow", serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 130px;
+		line-height: 1.3;
+	}
+	
+	.h2 {
+		font-family: "Elsie", serif;
+		font-weight: 900;
+		font-style: normal;
+		font-size: 60px;
+		line-height: 1.2;
+	}
+	.content p {
+		font-family: "Lusitana", serif;
+	  font-weight: 400;
+	  font-style: normal;
+	  line-height: 1.6;
+	  font-size: 40px;
+	  color: black
+	}
+	img {
+	 size: auto;
 	}
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
+.navbar {
+    background: #E0F1F2;
+    padding-left: 20px;
+	padding-right: 15px;
+}
+.navdiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo img{
+	width: 400px;
+    height: auto;
+}
+.menu-btn, .search-btn {
+    background-color: #E1D3E9; 
+    border: none;
+    padding: 10px;
+    border-radius: 8px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+.menu-btn img, .search-btn img {
+    width: 60px; 
+    height: auto;
+}
+.navicon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.main {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    max-width: 50%;
+    margin: 0 auto;
+    gap: 70px; 
+    padding: 20px 20px; 
+}
+
+.page-title {
+	font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 130px;
+  line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.mainleft {
+    flex: 1;
+    text-align: left;
+	flex-direction: column;
+    align-items: flex-start; 
+}
+.t1 {
+	width: 100%;
+    max-width: 450%;
+    display: block;
+    margin: 0 auto; 
+    padding-left: 10px;
+}
+.mainright {
+    flex: 1;
+    text-align: left;
+	text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 40px; 
+	max-width: 1300px;
+    padding: 10px 20px;
+}
+.jump-btn {
+	background-color: #CFE6C3;
+    border: none;
+    padding: 10px 20px;
+	font-family: "Elsie", serif;
+  	font-weight: 900;
+  	font-style: normal;
+    font-size: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+	margin-top: 70%;
+	text-transform: capitalize;
+}
+.home-content {
+	font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 40px;
+  color: black
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: 1;
+    justify-content: center; 
+    max-width: 3000px;
+    margin: 0 auto;
+    gap: 20px; 
+    padding: 50px 20px; 
+	text-align: center;
+}
+.title1 {
+	font-family: "Elsie", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+    margin-bottom: 20px;
+	text-transform: capitalize;
+	display: inline-block;
+    position: relative;
+}
+.title1::after {
+    content: "";
+    position: absolute;
+    left: 17%;
+    bottom: 2px; 
+    width: 67%;
+    height: 30px; 
+    background-color: #E1D3E9; 
+    z-index: -1;
+}
+
+.home-content1 {
+	text-align: left; 
+    max-width: 1500px; 
+	font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 40px;
+  color: black
+}
+.intro2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 1800px;
+    margin: 0 auto;
+    gap: 40px; 
+    padding: 50px 20px; 
+	text-align: center;
+}
+.home-content2 {
+	text-align: left; 
+    max-width: 1000px; 
+	font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 40px;
+  color: black
+}
+.t2 {
+	width: 200%;
+    max-width: 100%;
+    display: block;
+}
+
+.ingre {
+	display: grid;
+	grid-template-columns: 1;
+    justify-content: center; 
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px; 
+    padding: 50px 20px; 
+	text-align: center;
+}
+.ingredient-title {
+	font-family: "Elsie", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+}
+.ingredient-title::after {
+  content: "";
+  position: absolute;
+  left: -2%;
+  bottom: 2px; 
+  width: 105%;
+  height: 30px; 
+  background-color: #E1D3E9; 
+  z-index: -1;
+}
+.ingredient-content {
+	text-align: left; 
+    max-width: 800px; 
+	font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 40px;
+  color: black;
+  margin-top: 50px;
+}
+
+.ingredient-sec {
+	display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: start;
+    gap: 100px; 
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.t3 {
+	text-align: center;
+	width: 100%;
+    max-width: 1000px;
+    padding-left: 10px;
+	display: block;
+	margin: 0 auto;
+}
+.pro {
+	display: grid;
+	grid-template-columns: 1;
+    justify-content: center; 
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px; 
+    padding: 50px 20px; 
+	text-align: center;
+}
+.process-title {
+	font-family: "Elsie", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+}
+.process-title::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 2px; 
+  width: 100%;
+  height: 30px; 
+  background-color: #E1D3E9; 
+  z-index: -1;
+}
+.process-content {
+	text-align: left; 
+    max-width: 800px; 
+	font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 40px;
+  color: black;
+  margin-top: 100px;
+}
+.process-sec {
+	display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: start;
+    gap: 10px; 
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.t4 {
+	text-align: center;
+	width: 100%;
+    max-width: 800px;
+	display: block;
+	margin: 0 auto;
+}
+
+.alcohol {
+font-family: "Elsie", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.alcohol-content, 
+.alcohol-note,
+.freezing-content {
+	font-family: "Lusitana", serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.6;
+	font-size: 40px;
+	color: black;
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.freezing {
+	font-family: "Elsie", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.alcohol-freezing {
+	grid-column: 2 / span 9;
+    grid-row: 5 /  span 2;
+	columns: 2;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+	gap: 60px;
+	margin-top:100px;
+}
+.alcohol-content, .freezing-content p {
+	break-inside: avoid;
+    margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 800px;
+} 
+.t5 {
+	text-align: center;
+	width: 100%;
+    max-width: 2000px;
+	display: block;
+	margin: 0 auto;
+	
+}
+
+.af-img {
+	margin-top: 800px;
+}
+.rec {
+	display: grid;
+	grid-template-columns: 1;
+    justify-content: center; 
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px; 
+    padding: 50px 20px; 
+	text-align: center;
+}	
+.recipe {
+	font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+}
+.recipe::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 2px; 
+  width: 100%;
+  height: 24px; 
+  background-color: #CFE6C3; 
+  z-index: -1;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr 1.1fr; 
+    gap: 40px; 
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+	border-radius: 20px; 
+}
+.recipe-box {
+    background-color: #E0F1F2; 
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+}
+
+.recipe-box h3 {
+    font-family: "Lusitana", serif;
+    font-size: 45px;
+    font-weight: 900;
+	text-align: center;
+}
+.recipe-box ul,
+.recipe-box ol {
+    font-family: "Lusitana", serif;
+    font-size: 35px;
+    line-height: 1.6;
+    padding-left: 20px;
 }
